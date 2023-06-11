@@ -13,9 +13,9 @@ const users = [];
 
 users.push(
   new User ({
-    username: 'demo-user',
-    email: 'demo-user@appacademy.io',
-    hashedPassword: bcrypt.hashSync('starwars', 10)
+    username: 'admin',
+    email: 'leneage2@ukr.net',
+    hashedPassword: bcrypt.hashSync('password', 10)
   })
 )
 
@@ -72,3 +72,5 @@ const insertSeeds = () => {
                    process.exit(1);
                  });
 }
+
+// npx dotenv node seeders/seeds.js <--- command to create
